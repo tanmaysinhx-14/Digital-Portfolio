@@ -1,35 +1,24 @@
-# Tanmay Portfolio
+# Tanmay — Digital Portfolio
 
-This repository contains my personal portfolio built with Next.js. It is designed to present my work in AI, computer vision, backend development, and polished front-end implementation through a clean, responsive single-page experience.
-
-## Overview
-
-The portfolio highlights:
-
-- a structured hero section with profile links and clear calls to action
-- featured projects with supporting descriptions and technology tags
-- an experience timeline focused on the stacks used during each phase
-- education details and professional contact options
-- a shared typed data layer that powers both the page and the API routes
+Personal portfolio built with Next.js 16 and Bootstrap 5. Showcases projects in computer vision, backend development, and frontend implementation through a responsive single-page layout.
 
 ## Tech Stack
 
-- Next.js 16 with the App Router
-- React 19
-- TypeScript
-- Bootstrap 5
-- Custom global CSS
-- `next/font` with Inter
-- Vercel Analytics and Speed Insights
+- **Framework:** Next.js 16 (App Router, Turbopack)
+- **UI:** React 19, Bootstrap 5, custom CSS
+- **Font:** Inter Variable via `@fontsource-variable/inter`
+- **Analytics:** Vercel Analytics + Speed Insights
+- **Language:** TypeScript
+- **Deployment:** Vercel
 
 ## Project Structure
 
-```txt
+```
 src/
   app/
     api/
-      featured-work/route.ts
-      page-data/route.ts
+      featured-work/route.ts   # Returns featuredWork array
+      page-data/route.ts       # Returns composite page data
     components/
       about-me/
       communication-methods/
@@ -43,44 +32,35 @@ src/
     layout.tsx
     page.tsx
   data/
-    portfolio.ts
+    portfolio.ts               # Single source of truth for all content
 public/
   images/
-    feature-work/
-    hero-sec/
-    icon/
+    feature-work/              # Project screenshots
+    hero-sec/                  # Avatar + banner
+    icon/                      # Tech stack and social SVGs
 ```
 
-## Content Source
+## Content
 
-Most portfolio copy and structured content live in [`src/data/portfolio.ts`](src/data/portfolio.ts). This keeps the visible content consistent across:
-
-- the main page components
-- the internal API routes
-- shared labels, links, and section data
+All copy, links, and structured data live in [`src/data/portfolio.ts`](src/data/portfolio.ts). Editing that file updates the page, API routes, and all components simultaneously — nothing is duplicated.
 
 ## Local Development
 
-Install dependencies and run the development server:
-
 ```bash
 npm install
-npm run dev
+npm run dev        # http://localhost:3000 (Turbopack)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Validation
-
-Useful commands:
+Validation:
 
 ```bash
 npm run lint
 npm run build
 ```
 
-## Notes
+## API Routes
 
-- Images and icons are stored in `public/images`.
-- The portfolio is deployed on Vercel.
-- Content and layout are optimized for both desktop and mobile viewing.
+| Route | Returns |
+|---|---|
+| `GET /api/featured-work` | `{ featuredWork: FeaturedWorkItem[] }` |
+| `GET /api/page-data` | Hero links, education, experience, expertise tags |
