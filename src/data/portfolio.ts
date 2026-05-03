@@ -111,15 +111,13 @@ export const aboutData: AboutData = {
   focusSummary:
     "Recent projects have pushed me toward real-time monitoring systems, smarter automation, and interfaces that make technical tools easier for people to trust and adopt.",
   activeDomains: [
-    { title: "Computer Vision with OpenCV and MediaPipe" },
-    { title: "Machine Learning Workflows with PyTorch" },
+    { title: "DSA Foundations" },
     { title: "TypeScript-Based Web Applications" },
-    { title: "PHP and MySQL Backend Systems" },
+
   ],
   coreExpertise: [
-    { title: "Product-Focused UI Implementation" },
-    { title: "Bootstrap 5 and Responsive Layout Systems" },
-    { title: "Backend Logic and Data Flow Design" },
+    { title: "UI/UX using Bootstrap 5" },
+    { title: "PHP + MySQL Web Application Development" },
   ],
 };
 
@@ -170,12 +168,12 @@ export const experienceData: ExperienceItem[] = [
   },
   {
     icons: [{ src: "/images/icon/typescript-icon.svg", label: "TypeScript" }],
-    role: "Enterprise-Level Project Development",
+    role: "Rapid Application Development",
     startYear: "2025",
     endYear: "Present",
     bulletPoints: [
-      "Building more maintainable front-end features with TypeScript, stronger typing, and clearer component structure.",
-      "Improving interactive product flows while learning how to scale UI code with better architecture and state handling.",
+      "Building rapid prototypes using TypeScript with a focus on functional UI, clear data flow, and quick iteration under time constraints.",
+      "Designing and implementing interactive product flows while balancing speed, usability, and basic code structure during short development cycles.",
     ],
   },
   {

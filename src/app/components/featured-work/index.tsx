@@ -19,8 +19,8 @@ const FeaturedWork = ({ projects }: FeaturedWorkProps) => {
             </h2>
           </div>
 
-          <div className="work-grid">
-            <div className="row g-0">
+          <div className="work-grid p-3">
+            <div className="row g-2">
               {projects.map((value) => {
                 const projectHref = value.link || "#";
 

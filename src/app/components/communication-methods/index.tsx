@@ -23,7 +23,7 @@ const CommunicationMethods = ({ contact }: CommunicationMethodsProps) => {
                   <div className="d-flex flex-wrap gap-3 my-4 my-lg-0 mt-lg-3">
                     <Link
                       href={contact.primaryCta.href}
-                      className="btn btn-dark hero-cta"
+                      className="btn btn-primary hero-cta"
                     >
                       {contact.primaryCta.label}
                     </Link>

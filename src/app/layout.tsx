@@ -1,7 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
-import "@fontsource-variable/inter";
+import '@fontsource-variable/inter/index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Header from "./components/header";
