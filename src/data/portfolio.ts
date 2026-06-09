@@ -123,12 +123,20 @@ export const aboutData: AboutData = {
 
 export const featuredWork: FeaturedWorkItem[] = [
   {
+    title: "Academic ERP",
+    description:
+      "Designed and developed a multi-role Academic ERP system handling admin, faculty, and student workflows across attendance tracking, batch management, and notification systems. Focused on reliability, input safety, and building workflows that mirror real institutional operations.",
+    link: "https://github.com/tanmaysinhx-14/Academic-ERP/",
+    techStack: ["PHP", "MySQL", "Javascript"],
+    image: "/images/feature-work/academic-erp.png",
+  },
+  {
     title: "AIProctor - Vision-Based Proctoring System",
     description:
       "Built a real-time exam monitoring workflow that turns webcam input into live risk signals through gaze tracking, object detection, and rule-based analysis. I handled the computer vision pipeline, backend orchestration, and monitoring logic.",
     link: "https://github.com/tanmaysinhx-14/AIProctor",
     techStack: ["Python", "OpenCV", "PyTorch", "YOLO", "FastAPI"],
-    image: "/images/feature-work/aiproctor-img.png",
+    image: "/images/feature-work/aiproctor.png",
   },
   {
     title: "Career Institute Website",
@@ -136,15 +144,7 @@ export const featuredWork: FeaturedWorkItem[] = [
       "Designed and developed a conversion-focused institute website with clearer information hierarchy, responsive layouts, and a more polished Bootstrap-based front-end experience. The project emphasized presentation quality, speed, and trust-building design.",
     link: "https://github.com/tanmaysinhx-14/career-institute",
     techStack: ["Bootstrap 5", "UI Implementation", "Responsive Design"],
-    image: "/images/feature-work/ci-img.png",
-  },
-  {
-    title: "QR Attendance System",
-    description:
-      "Created a QR-driven attendance workflow that reduces manual entry and speeds up classroom check-ins. I built the validation flow and backend logic so attendance could be recorded quickly with better reliability and less friction.",
-    link: "https://github.com/tanmaysinhx-14/attendance-system",
-    techStack: ["TypeScript", "PHP", "Workflow Automation"],
-    image: "/images/feature-work/scan.jpg",
+    image: "/images/feature-work/ci.png",
   },
 ];
 
@@ -183,7 +183,7 @@ export const experienceData: ExperienceItem[] = [
     ],
     role: "Dynamic Web Application Backend Development",
     startYear: "2021",
-    endYear: "2025",
+    endYear: "Present",
     bulletPoints: [
       "Built a strong foundation in request handling, validation, sessions, and server-side application structure with PHP.",
       "Developed data-driven backend features with an emphasis on reliability, input safety, and maintainable flow control.",
@@ -194,7 +194,7 @@ export const experienceData: ExperienceItem[] = [
     icons: [{ src: "/images/icon/bootstrap-icon.svg", label: "Bootstrap 5" }],
     role: "UI and UX Design with Bootstrap 5",
     startYear: "2019",
-    endYear: "2024",
+    endYear: "Present",
     bulletPoints: [
       "Developed a strong grounding in semantic HTML, modern CSS, and responsive layout thinking through repeated front-end work.",
       "Used Bootstrap to design mobile-first interfaces with reusable components, stronger visual consistency, and faster iteration.",
