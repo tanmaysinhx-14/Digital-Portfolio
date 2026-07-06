@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import type { FeaturedWorkItem } from "@/data/portfolio";
 
 type FeaturedWorkProps = {
@@ -58,6 +57,23 @@ const FeaturedWork = ({ projects }: FeaturedWorkProps) => {
                             className="project-title-arrow"
                           />
                         </Link>
+
+                        {value.developmentStatus && (
+                          <div>
+                            <button
+                              className="btn btn-sm rounded-pill bg-success-subtle text-success fw-bold"
+                              disabled
+                              style={{
+                                fontSize: "0.75rem",
+                                fontWeight: 500,
+                                opacity: 1,
+                                pointerEvents: "none",
+                              }}
+                            >
+                              {value.developmentStatus}
+                            </button>
+                          </div>
+                        )}
 
                         <p className="mb-0">{value.description}</p>
 

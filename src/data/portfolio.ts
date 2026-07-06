@@ -38,6 +38,7 @@ export type FeaturedWorkItem = {
   link?: string | null;
   techStack: string[];
   title: string;
+  developmentStatus?: string;
 };
 
 export type ExperienceIcon = {
@@ -126,9 +127,10 @@ export const featuredWork: FeaturedWorkItem[] = [
     title: "Academic ERP",
     description:
       "Designed and developed a multi-role Academic ERP system handling admin, faculty, and student workflows across attendance tracking, batch management, and notification systems. Focused on reliability, input safety, and building workflows that mirror real institutional operations.",
-    link: "https://github.com/tanmaysinhx-14/Academic-ERP/",
+    link: "",
     techStack: ["PHP", "MySQL", "Javascript"],
     image: "/images/feature-work/academic-erp.png",
+    developmentStatus: "Under Development — Scruntized Preview Available Soon",
   },
   {
     title: "AIProctor - Vision-Based Proctoring System",
